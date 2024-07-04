@@ -1,0 +1,61 @@
+1, Using the following command to initialize a local repository
+git init
+2, Add and Commit Your Files to your local repository
+Now, you need to stage and commit your project files. In the terminal, use the following commands:
+
+git add .: This stages all the files in your project.
+git commit -m "Initial commit": This commits your changes with a message.
+git add .
+git commit -m "Initial commit"
+
+3, Connecting your remote github repository to your local repository
+git remote add origin https://github.com/manolopzy/test.git
+
+
+git remote add origin https://github.com/manolopzy/happylearning.git
+
+4, Pushing your local repository files to your corresponding remote one
+git push -u origin master
+
+
+Other git commands
+
+git config --global user.name "manolopzy"
+
+git config --global user.email "manolopeng@gmail.com"
+
+
+git config --list
+
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+
+
+
+Git command to remove a local git repository
+rm -rf .git*
+
+
+
+
+git add .gitignore && git commit -m “Add .gitignore with node_modules”
+
+
+How to Ignore node_modules in Git
+Create a .gitignore File:
+
+In your project root, create a file named .gitignore.
+Specify node_modules:
+
+Open .gitignore and add the following line:
+node_modules/
+This tells Git to ignore the entire node_modules directory.
+Commit .gitignore:
+
+Commit your .gitignore file to your repository:
+git add .gitignore
+git commit -m "Add .gitignore with node_modules"
+Effect on Existing Repositories:
+
+If node_modules was previously committed, you need to remove it:
+git rm -r –cached node_modules && git commit -m “Remove node_modules”
