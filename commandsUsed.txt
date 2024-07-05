@@ -1,0 +1,9 @@
+
+pip install matplotlib
+
+After importing the numpy library, there is no hint for auto completion, 
+the solution is the following:
+
+This may solve your problem
+Running the following command in your project terminal:
+pip install numpy --upgrade

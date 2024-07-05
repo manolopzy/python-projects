@@ -10,7 +10,7 @@ git commit -m "Initial commit"
 
 3, Connecting your remote github repository to your local repository
 git remote add origin https://github.com/manolopzy/test.git
-
+git remote add origin https://github.com/manolopzy/python-projects.git
 
 git remote add origin https://github.com/manolopzy/happylearning.git
 
